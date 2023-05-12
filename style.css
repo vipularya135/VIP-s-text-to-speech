@@ -1,0 +1,107 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #56dd5f;
+}
+::selection{
+  color: #f0c4c4;
+  background: #5256AD;
+}
+.wrapper{
+  width: 500px;
+  padding: 25px 30px;
+  border: 3px solid black;
+  border-radius: 7px;
+  background: #efbaba;
+  box-shadow: 7px 7px 20px rgba(0,0,0,0.05);
+}
+.wrapper header{
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+.wrapper form{
+  margin: 35px 0 20px;
+}
+form .row{
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+form .row label{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+form .row:nth-child(2) label{
+  font-size: 17px;
+}
+form :where(textarea, select, button){
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+}
+form .row textarea{
+  resize: none;
+  height: 110px;
+  font-size: 15px;
+  padding: 8px 10px;
+  border: 3px solid #090909;
+}
+form .row textarea::-webkit-scrollbar{
+  width: 1px;
+}
+form .row .outer{
+  height: 47px;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: center;
+  border: 3px solid #0b0b0b;
+}
+form .row select{
+  font-size: 13px;
+  background: none;
+}
+form .row select::-webkit-scrollbar{
+  width: 8px;
+}
+form .row select::-webkit-scrollbar-track{
+  background: #fff;
+}
+form .row select::-webkit-scrollbar-thumb{
+  background: #f5f2f2;
+  border-radius: 8px;
+  border-right: 2px solid #080808;
+}
+form button{
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 10px;
+  background: #fe5ad8;
+  transition: 0.3s ease;
+}
+form button:hover{
+  background: #fe9934;
+}
+
+@media(max-width: 400px){
+  .wrapper{
+    max-width: 345px;
+    width: 100%;
+  }
+}

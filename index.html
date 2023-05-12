@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VIP's Text To Speech</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>VIP's Text To Speech</header>
+      <form>
+        <div class="row">
+          <label>Enter Your Text Here</label>
+          <textarea id="text"></textarea>
+        </div>
+        <div class="row">
+          <label>Select Your Voice</label>
+          <div class="outer">
+            <select id="voices"></select>
+          </div>
+        </div>
+        <div class="row">
+          <label>Speed (in seconds)</label>
+          <input type="number" id="speed" value="1">
+        </div>
+        <div class="row">
+          <label>Pitch</label>
+          <input type="number" id="pitch" value="1">
+        </div>
+        <button id="speak">Convert Text To Speech</button>
+        <hr><br>
+        <label>(Setting the speech rate and pitch to 1 is generally recommended)</label>
+
+      </form>
+    </div>
+    <style>
+      .but {
+        border: 3px solid rgb(6, 6, 6);
+        border-radius: 75px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 2vw;
+        font-weight: bolder;
+        background-color: red;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+      }
+      .but a{
+        text-decoration: none;
+        color: #0a0909;
+      }
+    </style>
+    <div>
+      <button class="but"><a href="about.html">About Me</a></button>
+    </div>
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>
